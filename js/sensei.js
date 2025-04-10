@@ -1,14 +1,14 @@
-hljs.registerLanguage('mylanguage', function(hljs) {
+hljs.registerLanguage("mylanguage", function (hljs) {
   return {
-    keywords: 'def print', // Replace with your language’s keywords
+    keywords: "def print", // Replace with your language’s keywords
     contains: [
-      hljs.COMMENT('#', '$'), // Example comment rule
+      hljs.COMMENT("#", "$"), // Example comment rule
       {
-        className: 'function',
-        beginKeywords: 'def',
-        end: ':',
-        contains: [hljs.TITLE_MODE]
+        className: "function",
+        beginKeywords: "def",
+        end: ":",
+        contains: [hljs.TITLE_MODE],
       },
-    ]
+    ],
   };
 });
